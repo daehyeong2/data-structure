@@ -13,6 +13,9 @@ class ArrayStack:
             self.array[self.top] = item
         else:
             print("Stack Overflow")
+    def peek(self):
+        if self.top == -1: return None
+        return self.array[self.top]
     def pop(self):
         if not self.isEmpty():
             item = self.array[self.top]
